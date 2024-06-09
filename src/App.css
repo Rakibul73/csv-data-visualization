@@ -35,3 +35,42 @@
     transform: rotate(360deg);
   }
 }
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(odd) {
+  background-color: #2f2f34; /* Dark blue */
+  color: white; /* White text color */
+}
+
+tr:nth-child(even) {
+  background-color: #354d48; /* Black */
+  color: white; /* White text color */
+}
+
+tr:hover {
+  background-color: #333333; /* Darker shade of black on hover */
+}
+
+button {
+  margin: 5px;
+  padding: 5px 10px;
+  border: none;
+  background-color: #3a625f;
+  color: white;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: #353535;
+  cursor: not-allowed;
+}

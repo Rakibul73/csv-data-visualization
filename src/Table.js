@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import "./App.css";
 
 const Table = () => {
     const [data, setData] = useState([]);
@@ -67,6 +68,7 @@ const Table = () => {
                                 >
                                     {value}
                                 </td>
+                                
                             ))}
                         </tr>
                     ))}

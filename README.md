@@ -1,70 +1,47 @@
-# Getting Started with Create React App
+# CSV Data Visualization Web Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This repository contains the code for a simple web application built with ReactJS for the frontend and Python (Flask) for the backend. The application visualizes CSV data retrieved from a SQLite database using RESTful API endpoints.
 
-## Available Scripts
+> Used this backend API: [CSV Data Visualization Web Application Backend API](https://github.com/Rakibul73/csv-data-visualization-backend)
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- **Table Visualization**: Displays tabular data fetched from the backend server, allowing users to view and edit the data directly in the table.
+- **Line Chart Visualization**: Shows a line chart with the close column on the y-axis and sorted date on the x-axis. Users can select a trade code from the dropdown to view corresponding data in the line chart.
+- **Pie Chart Visualization**: Presents a pie chart that visualizes the distribution of trade codes in the dataset.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Technologies Used
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Frontend**:
+  - ReactJS
+  - React Chart.js 2 for chart visualization
+  - CSS for styling
 
-### `npm test`
+- **Backend**:
+  - Python
+  - Flask for creating RESTful APIs
+  - SQLAlchemy for database interaction
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Setup
 
-### `npm run build`
+1. Clone the repository to your local machine.
+2. Navigate to the project directory.
+3. Install dependencies by running:
+    ```bash
+    npm install
+    ```
+4. Start the frontend and backend servers:
+    - run `npm start`.
+5. Access the application in your web browser at `http://localhost:3000`.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Challenges Faced
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. **Data Visualization**: Implementing various types of data visualizations, such as line charts and pie charts, required understanding how to work with different chart libraries and manipulate data to fit the desired format.
+2. **CRUD Operations**: Implementing CRUD operations in the frontend and integrating them with the backend posed some challenges, particularly in handling asynchronous requests and updating the UI accordingly.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Lessons Learned
 
-### `npm run eject`
+- **ReactJS and Python Integration**: I gained valuable experience in integrating ReactJS with Python Flask for building full-stack web applications. Understanding how frontend and backend components interact and communicate was a key learning outcome.
+- **Data Visualization Techniques**: Through implementing various data visualization techniques, I learned how to effectively represent data in a visually engaging manner, enhancing the user experience and understanding.
+- **RESTful API Development**: Developing RESTful APIs using Flask allowed me to understand the principles of web service development and how to create scalable backend solutions for web applications.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
