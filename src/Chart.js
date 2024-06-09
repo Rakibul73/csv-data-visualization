@@ -28,7 +28,7 @@ const Chart = () => {
     const [tradeCode, setTradeCode] = useState("");
 
     useEffect(() => {
-        fetch("http://localhost:5000/data_without_pagination")
+        fetch("https://csv-data-visualization-backend.onrender.com/data_without_pagination")
             .then((response) => response.json())
             .then((data) => setData(data));
     }, []);

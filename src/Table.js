@@ -11,7 +11,7 @@ const Table = () => {
     }, [currentPage]);
 
     const fetchData = (page) => {
-        fetch(`http://127.0.0.1:5000/data?page=${page}&per_page=10`)
+        fetch(`https://csv-data-visualization-backend.onrender.com/data?page=${page}&per_page=10`)
             .then((response) => response.json())
             .then((data) => {
                 setData(data.data);
@@ -25,7 +25,7 @@ const Table = () => {
             item.id === id ? { ...item, [field]: value } : item
         );
         setData(updatedData);
-        fetch(`http://127.0.0.1:5000/data/${id}`, {
+        fetch(`https://csv-data-visualization-backend.onrender.com/data/${id}`, {
             method: "PUT",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ [field]: value }),
